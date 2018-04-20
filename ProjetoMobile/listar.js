@@ -6,7 +6,7 @@ class listarSalas extends Component {
     render() {
         return (
             <View style={styles.container}>
-                {lista.map((item, index) => (
+                {this.props.lista.map((item, index) => (
                     <text>
                         <text>Número da Sala</text>
                         <Text>{item.numero}</Text>
