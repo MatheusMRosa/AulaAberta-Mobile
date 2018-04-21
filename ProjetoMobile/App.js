@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import listarSalas from './listar';
+import ListarSalas from './listar';
 
 const lista = [
     {
@@ -28,7 +28,7 @@ const lista = [
 export default class App extends React.Component {
     render() {
         return (
-            <listarSalas lista={lista}/>
+            <ListarSalas lista={lista}/>
         );
     }
 }
