@@ -16,7 +16,7 @@ export default class App extends React.Component {
                 console.log('Data:', res.data);
                 this.setState(
                     {
-                        lista: res.data.map(name => ({ numero: name, ativa: false }))
+                        lista: res.data.map(name => ({ numero: name, status: -1 }))
                     });
                 console.log('lista:', this.state.lista);
             }
