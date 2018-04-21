@@ -3,6 +3,10 @@ import { Text, View, FlatList, TouchableOpacity } from 'react-native';
 
 
 class ListarSalas extends Component {
+    componentWillReceiveProps(oldProps, newProps){
+        console.log('componentWillReceiveProps:', oldProps);
+        console.log('componentWillReceiveProps:', newProps);
+    }
     render() {
         return (
             <View>
